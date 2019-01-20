@@ -65,7 +65,7 @@ public class FridgeFragment extends Fragment implements FridgeAdapter.ICloseFABM
         fabManualEntry.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), FridgeItemActivity.class);
+                Intent intent = new Intent(getActivity(), ManualActivity.class);
                 startActivity(intent);
             }
         });
@@ -73,9 +73,10 @@ public class FridgeFragment extends Fragment implements FridgeAdapter.ICloseFABM
         fabBarcodeEntry.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), FridgeItemActivity.class);
+                Intent intent = new Intent(getActivity(), BarcodereaderActivity.class);
                 startActivity(intent);
             }
+
         });
 
         // Create a list of FridgeItems

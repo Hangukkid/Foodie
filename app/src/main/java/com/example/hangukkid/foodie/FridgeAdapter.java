@@ -60,7 +60,7 @@ public class FridgeAdapter extends ArrayAdapter<FridgeItem> {
                     callerActivity.closeFABMenu(view_screen);
                     return;
                 }
-                Intent intent = new Intent(getContext(), FridgeItemActivity.class);
+                Intent intent = new Intent(getContext(), BarcodereaderActivity.class);
                 getContext().startActivity(intent);
             }
         });

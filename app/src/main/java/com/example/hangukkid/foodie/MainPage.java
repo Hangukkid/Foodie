@@ -6,6 +6,10 @@ import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 
+import com.example.hangukkid.foodie.API.GetFoodData;
+
+import java.util.List;
+
 public class MainPage extends AppCompatActivity {
 
     @Override
@@ -38,5 +42,8 @@ public class MainPage extends AppCompatActivity {
         Intent intent = getIntent();
 
         //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        List<String> ingredients = new List<String>;
+        ingredients.add("apples");
+//        GetFoodData.searchRecipes();
     }
 }

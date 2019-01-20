@@ -78,15 +78,6 @@ public class FridgeFragment extends Fragment implements FridgeAdapter.ICloseFABM
             }
         });
 
-
-        fabImageEntry.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), FridgeItemActivity.class);
-                startActivity(intent);
-            }
-        });
-
         // Create a list of FridgeItems
         final ArrayList<FridgeItem> items = new ArrayList<>(); // final so you can use in on click
         items.add(new FridgeItem("hi"));
@@ -150,9 +141,6 @@ public class FridgeFragment extends Fragment implements FridgeAdapter.ICloseFABM
         fabBarcodeEntryLayout.animate().translationY(-getResources().getDimension(R.dimen.standard_65));
         fabBarcodeEntryLayout.animate().translationX(-getResources().getDimension(R.dimen.standard_60));
         textBarcodeEntry.setVisibility(View.VISIBLE);
-
-        fabImageEntryLayout.animate().translationX(-getResources().getDimension(R.dimen.standard_95));
-        textImageEntry.setVisibility(View.VISIBLE);
     }
 
     public void closeFABMenu(View view_screen) {
@@ -167,9 +155,5 @@ public class FridgeFragment extends Fragment implements FridgeAdapter.ICloseFABM
         fabBarcodeEntryLayout.animate().translationY(0);
         fabBarcodeEntryLayout.animate().translationX(0);
         textBarcodeEntry.setVisibility(View.GONE);
-
-        fabImageEntryLayout.animate().translationY(0);
-        fabImageEntryLayout.animate().translationX(0);
-        textImageEntry.setVisibility(View.GONE);
     }
 }

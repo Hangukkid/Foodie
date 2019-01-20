@@ -37,6 +37,6 @@ public class MainPage extends AppCompatActivity {
         //---------------------Scroll------------------------------//
         Intent intent = getIntent();
 
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 }
